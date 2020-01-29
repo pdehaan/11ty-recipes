@@ -1,17 +1,26 @@
 {
   "name": "11ty-recipes",
+  "description": "Silly little proof of concept recipe blog.",
   "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11-recipes/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  },
+  "homepage": "https://github.com/pdehaan/11-recipes#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11-recipes.git"
+  },
   "scripts": {
     "11ty:build": "eleventy --config=src/.eleventy.js",
     "11ty:serve": "npm run 11ty:build -- --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
-  "license": "MPL-2.0",
-  "description": "",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
   }
 }
