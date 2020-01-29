@@ -1,0 +1,15 @@
+---
+layout: default.njk
+---
+
+<h1>{{ title | safe }}</h1>
+
+<p class="lead">{{ excerpt | safe }}</p>
+
+<section class="recipe-list">
+{% include "recipe-list.njk" %}
+</section>
+
+<hr />
+
+{{ content | safe }}

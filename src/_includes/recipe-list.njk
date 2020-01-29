@@ -1,0 +1,4 @@
+{% for name in recipeList %}
+  {% set recipe = recipes[name] %}
+  {% include "recipe.njk" %}
+{% endfor %}

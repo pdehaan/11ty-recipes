@@ -1,0 +1,17 @@
+{
+  "name": "11ty-recipes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "11ty:build": "eleventy --config=src/.eleventy.js",
+    "11ty:serve": "npm run 11ty:build -- --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Peter deHaan <peter@deseloper.com> (https://about.me/peterdehaan)",
+  "license": "MPL-2.0",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}

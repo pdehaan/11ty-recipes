@@ -1,0 +1,23 @@
+<hr />
+
+<header class="recipe__header">
+  <h2 class="recipe__header--name">{{ recipe.name }}</h2>
+</header>
+
+<section class="recipe__ingredients">
+  <h3>Ingredients</h3>
+  <ul>
+    {% for ingredient in recipe.ingredients %}
+    <li><span class="ingredient-quantity">{{ ingredient.quantity | safe }}</span> {% if ingredient.href %}<a href="{{ ingredient.href | url }}">{{ ingredient.label | safe }}</a>{% else %}{{ ingredient.label | safe }}{% endif %}{% if ingredient.note %} <i>{{ ingredient.note | safe }}</i>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="recipe__directions">
+  <h3>Directions</h3>
+  <ol>
+    {% for step in recipe.directions %}
+    <li>{{ step | safe }}</li>
+    {% endfor %}
+  </ol>
+</section>
